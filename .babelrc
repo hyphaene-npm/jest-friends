@@ -9,7 +9,8 @@
 						"modules": false
 					}
 				]
-			]
+			],
+			"plugins": [["transform-object-rest-spread"], ["external-helpers"]]
 		},
 		"test": {
 			"presets": [
@@ -19,7 +20,8 @@
 						"modules": "commonjs"
 					}
 				]
-			]
+			],
+			"plugins": [["transform-object-rest-spread"], ["external-helpers"]]
 		}
 	}
 }
