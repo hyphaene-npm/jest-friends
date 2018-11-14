@@ -17,9 +17,14 @@
 		"rollup react",
 		"component"
 	],
-	"bugs": {
-		"url": "/to/be/replaced"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hyphaene/jest-friends.git"
 	},
+	"bugs": {
+		"url": "https://github.com/hyphaene/jest-friends/issues"
+	},
+	"homepage": "https://github.com/hyphaene/jest-friends#readme",
 	"dependencies": {
 		"jest": "^23.6.0",
 		"react": "^16.6.3",
