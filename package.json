@@ -2,9 +2,9 @@
 	"name": "jest-friends",
 	"version": "0.0.0",
 	"description": "a set of helpers build around jest lib",
-	"author": "Maximilien Garenne &lt;maximilien.garenne@gmail.com&gt;",
+	"author": "Maximilien Garenne <maximilien.garenne@gmail.com>",
 	"license": "",
-	"browser": "build/index.js",
+	"main": "build/index.js",
 	"scripts": {
 		"build": "NODE_ENV=dev rollup -c",
 		"prepublishOnly": "yarn build",
