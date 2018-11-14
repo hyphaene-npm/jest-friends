@@ -1,4 +1,4 @@
-export const caseSelectorBuilder = (
+export const createCaseSelector = (
 	name,
 	selector,
 	expected,
@@ -12,7 +12,12 @@ export const caseSelectorBuilder = (
 	hasID,
 });
 
-export const testOnSelectors = (tests, stateWithCurrent, stateWithDefault, memoized = false) =>
+export const testSelectorsWithStates = (
+	tests,
+	stateWithCurrent,
+	stateWithDefault,
+	memoized = false
+) =>
 	tests.forEach(({ name, selector, expected, defaultValue, hasID }) => {
 		describe(name, () => {
 			const id = 'id';
@@ -29,12 +34,12 @@ export const testOnSelectors = (tests, stateWithCurrent, stateWithDefault, memoi
 		});
 	});
 
-export const caseInstanceBuilder = (name, instanceSelector, expectedValue) => ({
+export const createCaseInstance = (name, instanceSelector, expectedValue) => ({
 	name,
 	instanceSelector,
 	expectedValue,
 });
-export const testOnInstancesSelectors = (tests, expectedCurrent) =>
+export const testSelectors = (tests, expectedCurrent) =>
 	tests.forEach(({ name, instanceSelector, expectedValue }) => {
 		describe(name, () => {
 			it('should return the current value', () => {

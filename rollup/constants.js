@@ -19,8 +19,9 @@ export const plugins = [
 export const react = 'react';
 export const PropTypes = 'prop-types';
 export const reactDom = 'react-dom';
+export const renderer = 'react-test-renderer';
 
-export const external = [react, reactDom, PropTypes];
+export const external = [renderer, react, reactDom, PropTypes];
 
 export const globals = external.reduce((acc, current) => {
 	acc[current] = current;
