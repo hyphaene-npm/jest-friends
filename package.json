@@ -20,14 +20,18 @@
 	"bugs": {
 		"url": "/to/be/replaced"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"jest": "^23.6.0",
+		"react": "^16.6.3",
+		"react-test-renderer": "^16.6.3"
+	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-core": "^6.26.0",
+		"babel-eslint": "^8.2.6",
 		"babel-loader": "^7.1.4",
 		"babel-preset-env": "^1.6.1",
 		"babel-preset-minify": "^0.4.0",
-		"babel-eslint": "^8.2.6",
 		"eslint": "^5.3.0",
 		"eslint-import-resolver-webpack": "^0.10.1",
 		"eslint-plugin-import": "^2.14.0",
