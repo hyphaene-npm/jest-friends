@@ -1,0 +1,10 @@
+{
+  "plugins": ["stylelint-z-index-value-constraint"],
+  "rules": {
+    "plugin/z-index-value-constraint": {
+      "min": 1,
+      "max": 10
+    },
+    "property-no-unknown": true
+  }
+}

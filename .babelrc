@@ -1,0 +1,25 @@
+{
+	"ignore": ["node_modules/**"],
+	"env": {
+		"dev": {
+			"presets": [
+				[
+					"babel-preset-env",
+					{
+						"modules": false
+					}
+				]
+			]
+		},
+		"test": {
+			"presets": [
+				[
+					"babel-preset-env",
+					{
+						"modules": "commonjs"
+					}
+				]
+			]
+		}
+	}
+}
