@@ -3,23 +3,27 @@
 	"env": {
 		"dev": {
 			"presets": [
+				["react"],
 				[
 					"babel-preset-env",
 					{
 						"modules": false
 					}
-				]
+				],
+				["react"]
 			],
 			"plugins": [["transform-object-rest-spread"], ["external-helpers"]]
 		},
 		"test": {
 			"presets": [
+				["react"],
 				[
 					"babel-preset-env",
 					{
 						"modules": "commonjs"
 					}
-				]
+				],
+				["react"]
 			],
 			"plugins": [["transform-object-rest-spread"], ["external-helpers"]]
 		}
